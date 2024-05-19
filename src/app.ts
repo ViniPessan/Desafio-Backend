@@ -5,9 +5,8 @@ import router from './routes/enterpriseRoutes';
 
 const app = express();
 
-// use o cors antes de qualquer outra coisa
 app.use(cors({
-    origin: 'http://localhost:3000' // substitua por seu domínio
+    origin: 'http://localhost:3000' 
 }));
 
 app.use(bodyParser.json());
